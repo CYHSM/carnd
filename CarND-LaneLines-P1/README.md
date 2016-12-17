@@ -9,7 +9,7 @@ The detection of the lane marking was basically done in three steps:
 3. Use hough transformation to find lines from the edges
   * Transforms each point to a line in hough space where the intersection of these lines shows the presence of a line in image space (see [here](https://en.wikipedia.org/wiki/Hough_transform))
 
-For the test images
+## Example Image
 
 Test Image             |  Blurred
 :-------------------------:|:-------------------------:
@@ -18,3 +18,21 @@ Test Image             |  Blurred
 Canny edge detection             |  Hough transformation
 :-------------------------:|:-------------------------:
 ![](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/test_images/pipeline/canny.jpg?raw=true)  |  ![](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/test_images/pipeline/lines.jpg?raw=true)
+
+## Connecting the lines
+
+One of the more tricky parts of this project was to connect the lines you see in the picture after the hough transformation. I used following procedure:
+1. Get the slope of each line and thresh all lines smaller than 0.5
+2. Calculate the size of each line and take the average slope of the biggest x lines.
+  * I used x=5
+3. Get b with `b = y - m * x` and again get average b of the x biggest lines.
+4. With this line equation we can extrapolate to the bottom and the top of the lines.
+
+## Performance on Videos
+We had to test our algorithm on different videos with increasing difficulty. Here are the results of this algorithm (see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/P1.ipynb)) for more details.
+
+### Video White
+
+### Video Yellow
+
+### Video Challenge
