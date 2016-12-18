@@ -2,6 +2,7 @@
 In the first project of the udacity self-driving car course we had to find lane markings in pictures and videos of streets. See [here](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/README_Udacity.md) for the official Udacity Readme for the first project.
 
 The detection of the lane marking was basically done in three steps:
+
 1. Use a gaussian kernel to filter the image
   * This helps in getting rid of noisy parts of the image which makes the next steps more reliable
 2. Perform canny edge detection
