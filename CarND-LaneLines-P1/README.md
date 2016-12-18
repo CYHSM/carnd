@@ -22,6 +22,7 @@ Canny edge detection             |  Hough transformation
 ## Connecting the lines
 
 One of the more tricky parts of this project was to connect the lines you see in the picture after the hough transformation. I used following procedure:
+
 1. Get the slope of each line and thresh all lines smaller than 0.5
 2. Calculate the size of each line and take the average slope of the biggest x lines.
   * I used x=5
@@ -29,10 +30,11 @@ One of the more tricky parts of this project was to connect the lines you see in
 4. With this line equation we can extrapolate to the bottom and the top of the lines.
 
 ## Performance on Videos
-We had to test our algorithm on different videos with increasing difficulty. Here are the results of this algorithm (see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/P1.ipynb)) for more details.
+We had to test our algorithm on different videos with increasing difficulty. Here are the results of this algorithm (see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/P1.ipynb)) for more details. Click on the videos to view in full quality on youtube.
 
 ### Video White
-[![Video White]()]()
+[![Video White](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/white.gif?raw=true)](https://youtu.be/bajgiQuEc38)
 ### Video Yellow
-
+[![Video Yellow](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/yellow.gif?raw=true)](https://youtu.be/-F1OEQzTvcg)
 ### Video Challenge
+[![Video Challenge](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/extra.gif?raw=true)](https://youtu.be/g3G53Fcfb64)
