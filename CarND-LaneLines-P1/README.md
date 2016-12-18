@@ -30,7 +30,7 @@ One of the more tricky parts of this project was to connect the lines you see in
 4. With this line equation we can extrapolate to the bottom and the top of the lines.
 
 ## Performance on Videos
-We had to test our algorithm on different videos with increasing difficulty. Here are the results of this algorithm (see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/P1.ipynb)) for more details. Click on the videos to view in full quality on youtube.
+We had to test our algorithm on different videos with increasing difficulty. I used smoothing over the single frames with a window size of 10. Here are the results of this algorithm (see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/P1.ipynb) for more details). Click on the videos to view in full quality on youtube.
 
 ### Video White
 [![Video White](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/white.gif?raw=true)](https://youtu.be/bajgiQuEc38)
