@@ -32,7 +32,7 @@ One of the more tricky parts of this project was to connect the lines you see in
 We had to test our algorithm on different videos with increasing difficulty. Here are the results of this algorithm (see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/P1.ipynb)) for more details.
 
 ### Video White
-
+[![Video White]()]()
 ### Video Yellow
 
 ### Video Challenge
