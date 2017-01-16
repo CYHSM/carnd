@@ -1,5 +1,5 @@
 # Project One
-In the first project of the udacity self-driving car course we had to find lane markings in pictures and videos of streets. See [here](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/README_Udacity.md) for the official Udacity Readme for the first project.
+In the first project of the udacity self-driving car course we had to find lane markings in pictures and videos of streets. Click [here](https://github.com/CYHSM/carnd/blob/master/CarND-LaneLines-P1/README_Udacity.md) for the official Udacity readme regarding this project.
 
 The detection of the lane marking was basically done in three steps:
 
