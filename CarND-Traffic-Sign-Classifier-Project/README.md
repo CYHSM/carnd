@@ -15,6 +15,7 @@ However one of the most important parts of detecting traffic signs in images is 
 
 ## Preprocessing
 I tried different preprocessing steps (see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-Traffic-Sign-Classifier-Project/Traffic_Sign_Classifier.ipynb) for a full list) but in the end settled for:
+
 1. Scale data to (0,1)
 2. Convert images to grayscale
 
@@ -36,4 +37,4 @@ I used a modified version of the LeNet architecture with following layers:
 * Fully Connected Layer : n = 256
 * Dropout Layer : Dropout Value = 0.8
 
-see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-Traffic-Sign-Classifier-Project/Traffic_Sign_Classifier.ipynb) for more details on the architecture. 
+see [Jupyter Notebook](https://github.com/CYHSM/carnd/blob/master/CarND-Traffic-Sign-Classifier-Project/Traffic_Sign_Classifier.ipynb) for more details on the architecture.
