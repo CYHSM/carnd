@@ -2,3 +2,10 @@
 *.p
 *.gz
 *.pickle
+*.npy
+*.pyc
+
+CarND-Behavioral-Cloning/bh_99lines.py
+CarND-Behavioral-Cloning/Data/
+CarND-Behavioral-Cloning/Simulators/
+CarND-Behavioral-Cloning/WorkingModels/
