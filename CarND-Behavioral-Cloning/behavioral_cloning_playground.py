@@ -10,7 +10,9 @@ import matplotlib.pyplot as plt
 import keras.backend
 import tensorflow as tf
 import json
-from keras.models import model_from_json
+from keras.models import model_from_json, load_model
+
+
 
 # import os
 # os.environ["CUDA_VISIBLE_DEVICES"]=""
@@ -26,7 +28,7 @@ df[vec_zeros.sample(n=10).keys()]
 ind = vec_zeros.sample(frac=0.9).index
 rows = np.random.choice(df.index.values, 10)
 df.xs(vec_zeros.sample(n=10).keys())
-# 
+#
 # df2 = df.drop(ind)
 # len(df2)
 # len(df)
