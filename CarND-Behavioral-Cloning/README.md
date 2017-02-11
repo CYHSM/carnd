@@ -9,13 +9,13 @@ Each frame consisted of three images (left, center, right):
 
 Left | Center | Right
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/Samples/left?raw=true)|![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/Samples/center?raw=true)|![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/Samples/right?raw=true)
+![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/Samples/left.jpg?raw=true)|![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/Samples/center.jpg?raw=true)|![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/Samples/right.jpg?raw=true)
 
 In my model all three images are used, where the left and the right images have an offset added to their steering angles. I experimented a bit with values between 0.1-0.5 and ended up using +0.25 for the left image and -0.25 for the right image.
 
 ## Model Architecture
 My model architecture consists of convolutional layers followed by fully connected layers with added dropout:
-![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/model_architecture?raw=true)
+![](https://github.com/CYHSM/carnd/blob/master/CarND-Behavioral-Cloning/model_architecture.png?raw=true)
 
 ## Model Evaluation
 
