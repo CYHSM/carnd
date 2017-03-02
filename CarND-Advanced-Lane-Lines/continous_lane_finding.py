@@ -53,7 +53,7 @@ def process_frame(img):
     # Smooth fits
     left_fit, right_fit = smooth_fits(left_fit, right_fit)
     # Calculate curvature
-    curvature_in_m = alf.calculate_curvature(
+    curvature_in_m,_,offset_from_center = alf.calculate_curvature(
         perspective_transformed, left_fit, right_fit, fits)
     # Warp back to road
     result = alf.warp_perspective_back(
@@ -62,7 +62,9 @@ def process_frame(img):
     curvature_in_m = np.mean(curvature_in_m)
     curvature_in_m = smooth_curvature(curvature_in_m)
     curvature_text = 'Curvature : {:.2f}'.format(curvature_in_m)
+    offset_text = 'Offset from Center : {:.2f}'.format(offset_from_center)
     cv2.putText(result, curvature_text, (200, 100), 0, 1.2, (255, 255, 0), 2)
+    cv2.putText(result, offset_text, (200, 200), 0, 1.2, (255, 255, 0), 2)
 
     return result
 

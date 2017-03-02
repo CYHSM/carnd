@@ -443,7 +443,10 @@ def calculate_curvature(img, left_fit, right_fit, fits):
     right_curverad = ((1 + (2 * right_fit_cr[0] * y_eval * ym_per_pix + right_fit_cr[
                       1])**2)**1.5) / np.absolute(2 * right_fit_cr[0])
     # Now our radius of curvature is in meters
-    return left_curverad, right_curverad
+    # Offset from center
+    x_offset = ((left_fit_cr[2] + right_fit_cr[2]) / 2) - (img.shape[1]*xm_per_pix/2)
+
+    return left_curverad, right_curverad, x_offset
 
 
 def warp_perspective_back(warped, undist, left_fit, right_fit, fits, Minv):
