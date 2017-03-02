@@ -4,6 +4,8 @@
 *.pickle
 *.npy
 *.pyc
+__pycache__/
+.ipynb_checkpoints
 
 CarND-Behavioral-Cloning/bh_99lines.py
 CarND-Behavioral-Cloning/Data/
