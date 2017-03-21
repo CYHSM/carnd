@@ -6,3 +6,4 @@ This repository is a collection of my projects for the SDC nanodegree.
   * [Project 2](https://github.com/CYHSM/carnd/tree/master/CarND-Traffic-Sign-Classifier-Project)
   * [Project 3](https://github.com/CYHSM/carnd/tree/master/CarND-Behavioral-Cloning)
   * [Project 4](https://github.com/CYHSM/carnd/tree/master/CarND-Advanced-Lane-Lines)
+  * [Project 5](https://github.com/CYHSM/carnd/tree/master/CarND-Vehicle-Detection)
