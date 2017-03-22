@@ -51,3 +51,8 @@ For fitting a polynomial to the perspective transformed and thresholded image we
 ## Video Production
 We now can use this do find lane lines in videos by just performing these procedures on each frame subsequently.
 My resulting video can be found [here](https://github.com/CYHSM/carnd/raw/master/CarND-Advanced-Lane-Lines/out.mp4)
+
+## Discussion
+Projecting into birds-eye view seems a very nice method for detecting lane lines. I still think that a more robust method can be applied by using a deep learning model.
+
+Humans can also predict lane lines without seeing them, as they are experienced (for example with snowy roads). This is something where this algorithm would fail but a more robust one could learn to still detect them. 
